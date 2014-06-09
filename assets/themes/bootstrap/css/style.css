@@ -274,71 +274,6 @@ section #title .credits.right {
   float: right;
 }
 
-@media screen and (min-width: 769px) {
-	.navbar {
-	  background-color: transparent !important;
-	  border-color: transparent !important;
-	}
-
-	.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
-	  background-color: transparent !important;
-	  color: #555555;
-	}
-
-	.navbar .navbar-nav > .active, .navbar .navbar-nav > li {
-	  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-	  font-weight: normal !important;
-	  list-style: none !important;
-	  display: inline !important;
-	  color: white !important;
-	  line-height: 50px !important;
-	  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
-	  font-size: 14px !important;
-	  margin-right: 10px !important;
-	}
-	.navbar .navbar-nav > .active > a, .navbar .navbar-nav > li > a {
-	  color: white !important;
-	  border: 1px solid #5d910b !important;
-	  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10)) !important;
-	  background: -webkit-linear-gradient(#93bd20, #659e10) !important;
-	  background: -moz-linear-gradient(#93bd20, #659e10) !important;
-	  background: -o-linear-gradient(#93bd20, #659e10) !important;
-	  background: -ms-linear-gradient(#93bd20, #659e10) !important;
-	  background: linear-gradient(#93bd20, #659e10) !important;
-	  -moz-border-radius: 2px !important;
-	  -webkit-border-radius: 2px !important;
-	  -o-border-radius: 2px !important;
-	  -ms-border-radius: 2px !important;
-	  -khtml-border-radius: 2px !important;
-	  border-radius: 2px !important;
-	  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
-	  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
-	  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
-	  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
-	  background-color: #93bd20 !important;
-	  padding: 10px 12px !important;
-	  margin-top: 6px !important;
-	  line-height: 14px !important;
-	  font-size: 14px !important;
-	  display: inline-block !important;
-	  text-align: center !important;
-	}
-	.navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > li > a:hover {
-	  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e)) !important;
-	  background: -webkit-linear-gradient(#749619, #527f0e) !important;
-	  background: -moz-linear-gradient(#749619, #527f0e) !important;
-	  background: -o-linear-gradient(#749619, #527f0e) !important;
-	  background: -ms-linear-gradient(#749619, #527f0e) !important;
-	  background: linear-gradient(#749619, #527f0e) !important;
-	  background-color: #659e10 !important;
-	  border: 1px solid #527f0e !important;
-	  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-	  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-	  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-	  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-	}
-}
-
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -404,3 +339,71 @@ section #title .credits.right {
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+@media screen and (min-width: 769px) {
+	.navbar .nav {
+	  float: left;
+	}
+	.navbar {
+	  background-color: transparent !important;
+	  border-color: transparent !important;
+	}
+
+	.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+	  background-color: transparent !important;
+	  color: #555555;
+	}
+
+	.navbar .navbar-nav > .active, .navbar .navbar-nav > li {
+	  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	  font-weight: normal !important;
+	  list-style: none !important;
+	  display: inline !important;
+	  color: white !important;
+	  line-height: 50px !important;
+	  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
+	  font-size: 14px !important;
+	  margin-right: 10px !important;
+	}
+	.navbar .navbar-nav > .active > a, .navbar .navbar-nav > li > a {
+	  color: white !important;
+	  border: 1px solid #5d910b !important;
+	  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10)) !important;
+	  background: -webkit-linear-gradient(#93bd20, #659e10) !important;
+	  background: -moz-linear-gradient(#93bd20, #659e10) !important;
+	  background: -o-linear-gradient(#93bd20, #659e10) !important;
+	  background: -ms-linear-gradient(#93bd20, #659e10) !important;
+	  background: linear-gradient(#93bd20, #659e10) !important;
+	  -moz-border-radius: 2px !important;
+	  -webkit-border-radius: 2px !important;
+	  -o-border-radius: 2px !important;
+	  -ms-border-radius: 2px !important;
+	  -khtml-border-radius: 2px !important;
+	  border-radius: 2px !important;
+	  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
+	  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
+	  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
+	  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7) !important;
+	  background-color: #93bd20 !important;
+	  padding: 10px 12px !important;
+	  margin-top: 6px !important;
+	  line-height: 14px !important;
+	  font-size: 14px !important;
+	  display: inline-block !important;
+	  text-align: center !important;
+	}
+	.navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > li > a:hover {
+	  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e)) !important;
+	  background: -webkit-linear-gradient(#749619, #527f0e) !important;
+	  background: -moz-linear-gradient(#749619, #527f0e) !important;
+	  background: -o-linear-gradient(#749619, #527f0e) !important;
+	  background: -ms-linear-gradient(#749619, #527f0e) !important;
+	  background: linear-gradient(#749619, #527f0e) !important;
+	  background-color: #659e10 !important;
+	  border: 1px solid #527f0e !important;
+	  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	}
+}
