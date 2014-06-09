@@ -274,6 +274,11 @@ section #title .credits.right {
   float: right;
 }
 
+.navbar {
+  background-color: #F8F8F8;
+  border-color: #E7E7E7;
+}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
