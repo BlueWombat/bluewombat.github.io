@@ -274,7 +274,7 @@ section #title .credits.right {
   float: right;
 }
 
-@media screen and (((min-width: 769px) and (orientation:portrait)) or ((min-width: 1025px) and (orientation:landscape))) {
+@media screen and (min-width: 769px) {
 	.navbar {
 	  background-color: transparent !important;
 	  border-color: transparent !important;
