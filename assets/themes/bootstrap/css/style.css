@@ -282,9 +282,6 @@ section #title .credits.right {
 .container-narrow > hr {
   margin: 30px 0; }
 
-.navbar .nav {
-  float: right; }
-
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -342,7 +339,7 @@ section #title .credits.right {
 
 @media screen and (min-width: 769px) {
 	.navbar .nav {
-	  float: left;
+	  float: right;
 	}
 	.navbar {
 	  background-color: transparent !important;
