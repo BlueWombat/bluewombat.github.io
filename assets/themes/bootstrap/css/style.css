@@ -284,7 +284,7 @@ section #title .credits.right {
   color: #555555;
 }
 
-.navbar nav li {
+.navbar .navbar-nav > .active, .navbar .navbar-nav > li {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal !important;
   list-style: none !important;
@@ -294,7 +294,7 @@ section #title .credits.right {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
   font-size: 14px !important;
 }
-.navbar nav li a {
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > li > a {
   color: white !important;
   border: 1px solid #5d910b !important;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10)) !important;
@@ -321,7 +321,7 @@ section #title .credits.right {
   display: inline-block !important;
   text-align: center !important;
 }
-.navbar nav li a:hover {
+.navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > li > a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e)) !important;
   background: -webkit-linear-gradient(#749619, #527f0e) !important;
   background: -moz-linear-gradient(#749619, #527f0e) !important;
@@ -334,19 +334,6 @@ section #title .credits.right {
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-}
-.navbar nav li.fork {
-  float: left !important;
-  margin-left: 0px !important;
-}
-.navbar nav li.downloads {
-  float: right !important;
-  margin-left: 6px !important;
-}
-.navbar nav li.title {
-  float: right !important;
-  margin-right: 10px !important;
-  font-size: 11px !important;
 }
 
 /* Custom container */
