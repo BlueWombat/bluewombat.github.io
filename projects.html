@@ -14,9 +14,10 @@ group: navigation
 	</li>
 </script>
 <script type="text/javascript">
-$.getJSON("//api.github.com/users/bluewombat/repos?callback=?", function (data) {
-	console.log(data);
-	$("#projectList").loadTemplate($("#projectTmpl"), data.data);
+$(function () {
+	$.getJSON("https://api.github.com/users/bluewombat/repos?callback=?", function (data) {
+		$("#projectList").loadTemplate($("#projectTmpl"), data.data);
+	});
 });
 </script>
 <ul id="projectList"></ul>
