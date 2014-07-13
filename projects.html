@@ -6,4 +6,21 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<p>Here will be some text</p>
+<p>Below you'll find a list of all my Github hosted projects, in other words, my open source stuff, including the source for this very website.</p>
+
+<script type="text/html" id="projectTmpl">
+	<li>
+		<a data-href="html_url" data-content="name" style="font-weight:bold"></a><br/><span data-content="description"></span>
+	</li>
+</script>
+<script type="text/javascript">
+$.getJSON("//api.github.com/users/bluewombat/repos?callback=?", function (data) {
+	console.log(data);
+	$("#projectList").loadTemplate($("#projectTmpl"), data.data);
+});
+</script>
+<ul id="projectList"></ul>
+
+<h2>Support</h2>
+<p>If you like my work, and would encourage me to keep on providing stuff, then please show your appreciation by <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=787UAXHZZPJF8" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="" /></a> through Paypal, og tipping me with
+<script data-gittip-username="BlueWombat" data-gittip-widget="button" src="//gttp.co/v1.js"></script>.</p>
