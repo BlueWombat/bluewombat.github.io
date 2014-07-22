@@ -4,6 +4,7 @@ title: "Cookiereports done right"
 description: ""
 category: 
 tags: csharp, razor, cookies, tips
+excerpt_separator: "</p>"
 ---
 {% include JB/setup %}
 
