@@ -11,11 +11,11 @@ Naturally this solution isn't limited to Umbraco, it can be used in any MVC View
 {% include JB/setup %}
 
 Err... sorta. There's no doubt that <a href="http://cookiereports.com">Cookiereports</a> is a terrible product, that I really can't see the value of; as opposed to writing the legal stuff yourself.
-But for some reason client's insists on using them, so below you'll find a nice little Umbraco MacroPartial, that will at least let you integrate it into your sift a bit better than the god awful iframe solution they normally force you to use.
+But for some reason clients insists on using them, so below you'll find a nice little Umbraco MacroPartial, that will at least let you integrate it into your site a bit better than the god awful iframe solution they normally force you to use.
 Naturally this solution isn't limited to Umbraco, it can be used in any MVC View or Partial View, or even in Webforms, if you care to do some minor coding yourself.
 
 ### The Razor part
-What's happening below is actually quite trivial. It fetches the source for the page that normally would be embedded via an iframe, and runs a couple of Regex's against it, to extract the body, and transform all href's and src's to fully qualified Uri's, since we're no longer executing in the original domain context.
+What's happening below is actually quite trivial. It fetches the source for the page that normally would be embedded via an iframe, and runs a couple of Regex' against it, to extract the body, and transform all hrefs and srcs to fully qualified Uris, since we're no longer executing in the original domain context.
 {% highlight csharp linenos %}
 {% raw %}
 @using System.Text
@@ -24,7 +24,7 @@ What's happening below is actually quite trivial. It fetches the source for the 
 @{
     var language = Model.MacroParameters["lang"].ToString();
     var client = new WebClient();
-    var html = Encoding.UTF8.GetString(client.DownloadData("http://policy.cookiereports.com/aea84c19-" + language + ".html"));
+    var html = Encoding.UTF8.GetString(client.DownloadData("http://policy.cookiereports.com/{your key goes here}-" + language + ".html"));
     var r = new Regex(@"<body[^>]*>(?<content>.*)</body>", RegexOptions.IgnoreCase | RegexOptions.Singleline);
     var body = r.Match(html).Groups["content"].Value;
     r = new Regex(@"(?<attr>src|href)=""(?<val>[^""]*)""", RegexOptions.IgnoreCase | RegexOptions.Singleline);
@@ -35,7 +35,7 @@ What's happening below is actually quite trivial. It fetches the source for the 
 {% endhighlight %}
 
 ### The CSS part
-This is an almost exact copy of the original CSS, with only a few changes. Everything is now properly namespaced under #policy, to prevent inteference, and url's are now pointing on fully qualified Uri's.
+This is an almost exact copy of the original CSS, with only a few changes. Everything is now properly namespaced under #policy, to prevent inteference, and urls are now pointing on fully qualified Uris.
 {% highlight css linenos %}
 {% raw %}
 <style type="text/css">
