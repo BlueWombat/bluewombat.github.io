@@ -8,6 +8,6 @@ tagline: My ramblings, projects etc.
 <ul class="posts">
   {% for post in site.posts %}
     <a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
-	{{ post.excerpt }}
+	{{ post.content | split:"<!--more-->" | first }}
   {% endfor %}
 </ul>
