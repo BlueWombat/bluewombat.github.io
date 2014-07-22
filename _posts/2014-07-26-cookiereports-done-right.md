@@ -4,7 +4,9 @@ title: "Cookiereports done right"
 description: ""
 category: 
 tags: csharp, razor, cookies, tips
-excerpt_separator: "</p>"
+excerpt: "Err... sorta. There's no doubt that Cookiereports is a terrible product, that I really can't see the value of; as opposed to writing the legal stuff yourself.
+But for some reason client's insists on using them, so below you'll find a nice little Umbraco MacroPartial, that will at least let you integrate it into your sift a bit better than the god awful iframe solution they normally force you to use.
+Naturally this solution isn't limited to Umbraco, it can be used in any MVC View or Partial View, or even in Webforms, if you care to do some minor coding yourself."
 ---
 {% include JB/setup %}
 
