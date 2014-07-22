@@ -10,7 +10,9 @@ tags: csharp, razor, cookies, tips
 Err... sorta. There's no doubt that <a href="http://cookiereports.com">Cookiereports</a> is a terrible product, that I really can't see the value of; as opposed to writing the legal stuff yourself.
 But for some reason clients insists on using them, so below you'll find a nice little Umbraco MacroPartial, that will at least let you integrate it into your site a bit better than the god awful iframe solution they normally force you to use.
 Naturally this solution isn't limited to Umbraco, it can be used in any MVC View or Partial View, or even in Webforms, if you care to do some minor coding yourself.
+
 <!--more-->
+
 ### The Razor part
 What's happening below is actually quite trivial. It fetches the source for the page that normally would be embedded via an iframe, and runs a couple of Regex' against it, to extract the body, and transform all hrefs and srcs to fully qualified Uris, since we're no longer executing in the original domain context.
 {% highlight csharp linenos %}
