@@ -282,6 +282,17 @@ section #title .credits.right {
 .container-narrow > hr {
   margin: 30px 0; }
 
+ul.posts {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.posts li {
+	margin: 0;
+	padding: 0;
+}
+ 
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -402,6 +413,46 @@ section #title .credits.right {
 	  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
 	  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
 	  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	}
+}
+@media screen and (max-width: 768px) {
+	.navbar .navbar-nav > .active, .navbar .navbar-nav > li {
+		font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		color: white !important;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
+		font-size: 14px !important;
+		margin-right: 10px !important;
+	}
+	.navbar .navbar-brand, .navbar .navbar-nav > .active > a, .navbar .navbar-nav > li > a {
+		color: white !important;
+	}
+	.navbar .navbar-nav > .active > a {
+	  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e)) !important;
+	  background: -webkit-linear-gradient(#749619, #527f0e) !important;
+	  background: -moz-linear-gradient(#749619, #527f0e) !important;
+	  background: -o-linear-gradient(#749619, #527f0e) !important;
+	  background: -ms-linear-gradient(#749619, #527f0e) !important;
+	  background: linear-gradient(#749619, #527f0e) !important;
+	  background-color: #659e10 !important;
+	  /*border: 1px solid #527f0e !important;
+	  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+	  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;*/
+	}
+	.navbar {
+		background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10)) !important;
+		background: -webkit-linear-gradient(#93bd20, #659e10) !important;
+		background: -moz-linear-gradient(#93bd20, #659e10) !important;
+		background: -o-linear-gradient(#93bd20, #659e10) !important;
+		background: -ms-linear-gradient(#93bd20, #659e10) !important;
+		background: linear-gradient(#93bd20, #659e10) !important;
+		background-color: #93bd20 !important;
+		border: 1px solid #527f0e !important;
+		-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+		-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+		-o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
+		box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
 	}
 }
 
