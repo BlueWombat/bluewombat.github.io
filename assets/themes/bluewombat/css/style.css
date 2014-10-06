@@ -426,18 +426,13 @@ ul.posts li {
 		color: white !important;
 	}
 	.navbar .navbar-nav > .active > a {
-	  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e)) !important;
-	  background: -webkit-linear-gradient(#749619, #527f0e) !important;
-	  background: -moz-linear-gradient(#749619, #527f0e) !important;
-	  background: -o-linear-gradient(#749619, #527f0e) !important;
-	  background: -ms-linear-gradient(#749619, #527f0e) !important;
-	  background: linear-gradient(#749619, #527f0e) !important;
-	  background-color: #659e10 !important;
-	  /*border: 1px solid #527f0e !important;
-	  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-	  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-	  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;
-	  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0) !important;*/
+		background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e)) !important;
+		background: -webkit-linear-gradient(#749619, #527f0e) !important;
+		background: -moz-linear-gradient(#749619, #527f0e) !important;
+		background: -o-linear-gradient(#749619, #527f0e) !important;
+		background: -ms-linear-gradient(#749619, #527f0e) !important;
+		background: linear-gradient(#749619, #527f0e) !important;
+		background-color: #659e10 !important;
 	}
 	.navbar {
 		background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10)) !important;
