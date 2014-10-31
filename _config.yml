@@ -1,8 +1,7 @@
-gems
-	- jekyll-mentions
-	- jekyll-redirect-from
-	- jemoji
-	- jekyll-sitemap
+gems:
+- jekyll-mentions
+- jekyll-redirect-from
+- jemoji
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
