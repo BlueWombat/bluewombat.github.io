@@ -24,3 +24,7 @@ a renowned Swedish software developer also behind projects like Trac, ScummVM an
 Make sure to check it out, you really won't regret it, if you're a Spotify user.
 
 Now all there's really left to say is; "Winamp, Winamp, it really whips the Llama's ass!"
+
+### UPDATE: 16-05-2015
+
+Since Spotiamp's official website has been down for quite some time, I've decided to put up a mirror for it here: <a href="/assets/downloads/Spotiamp_0.2_Setup.exe">Mirror</a>.
