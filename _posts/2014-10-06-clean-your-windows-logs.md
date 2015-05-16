@@ -20,18 +20,23 @@ Below you'll find a couple of commands that will let you delete log files older 
 Below you'll find the command I use to automatically delete IIS W3 logs.
 
 {% highlight text %}
+{% raw %}
 forfiles /P X:\IIS_Log_Path /S /D -7 /C "cmd /c del /q @path"
+{% endraw %}
 {% endhighlight %}
 
 If you'd like to know exactly what's going on, just write the command below, and you'll get all the documentation you'll need.
 
 {% highlight text %}
+{% raw %}
 forfiles /?
+{% endraw %}
 {% endhighlight %}
 
 And here it is as a complete Scheduled Task that you can save and import directly.
 
 {% highlight XML linenos %}
+{% raw %}
 <?xml version="1.0" encoding="UTF-16"?>
 <Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
   <RegistrationInfo>
@@ -81,6 +86,7 @@ And here it is as a complete Scheduled Task that you can save and import directl
     </Exec>
   </Actions>
 </Task>
+{% endraw %}
 {% endhighlight %}
 
 Remember to change IIS_Log_Path to point at whatever is defined as your logging root folder, and the command will automatically traverse all subfolders.
