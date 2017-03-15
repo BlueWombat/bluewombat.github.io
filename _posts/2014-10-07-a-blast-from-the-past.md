@@ -21,7 +21,7 @@ Now all I need is to find the actual toy, I hope I still have it somewhere, and 
 And here it is:
 
 <p style="text-align: center">
-	<img src="{{ site.url }}/assets/images/ID4-floppy.jpg" alt="" style="max-width: 50%" />
+	<img src="/assets/images/ID4-floppy.jpg" alt="" style="max-width: 50%" />
 </p>
 
 And as an added bonus below you'll find a video going the through the game contained on the disk, courtesy of: <a href="http://www.youtube.com/channel/UCbFKzhKnJTeYSaWpvLPp-QQ" target="_blank">Taylor Cheatwood</a>
