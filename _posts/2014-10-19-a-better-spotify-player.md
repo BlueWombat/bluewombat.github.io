@@ -18,7 +18,7 @@ and also Winamp visualization plugins. It is created as a side project by <a hre
 a renowned Swedish software developer also behind projects like Trac, ScummVM and more.
 
 <p style="text-align: center">
-	<img src="{{ site.url }}/assets/images/spotiamp.png" alt="" style="max-width: 50%" />
+	<img src="/assets/images/spotiamp.png" alt="" style="max-width: 50%" />
 </p>
 
 Make sure to check it out, you really won't regret it, if you're a Spotify user.
@@ -28,3 +28,7 @@ Now all there's really left to say is; "Winamp, Winamp, it really whips the Llam
 ### UPDATE: 16-05-2015
 
 Since Spotiamp's official website has been down for quite some time, I've decided to put up a mirror for it here: <a href="/assets/downloads/Spotiamp_0.2_Setup.exe">Mirror</a>.
+
+### UPDATE: 15-03-2017
+
+Find the original website at <a href="https://web.archive.org/web/20160109220758/http://spotiamb.com/" target="_blank">Wayback Machine</a>.

@@ -19,13 +19,13 @@ After some searching I found a guy who did his own snap-in for IIS manager, and 
 The first you'd want to do, is to set the timeout of the application pool to 0 (indefinite) like so, default is 20 minutes:
 
 <p style="text-align: center">
-	<img src="{{ site.url }}/assets/images/Application Initialization 1.png" style="max-width: 100%" />
+	<img src="/assets/images/Application Initialization 1.png" style="max-width: 100%" />
 </p>
 
 Here's a snapshot of how the application level tab of the snap-in looks like.
 
 <p style="text-align: center">
-	<img src="{{ site.url }}/assets/images/Application Initialization 2.png" style="max-width: 100%" />
+	<img src="/assets/images/Application Initialization 2.png" style="max-width: 100%" />
 </p>
 
 Here's an example of how a working application level configuration could look like.
@@ -49,7 +49,7 @@ And the path for this file is:
 Here's a screenshot of how the website level tab of the snap-in looks like.
 
 <p style="text-align: center">
-	<img src="{{ site.url }}/assets/images/Application Initialization 3.png" style="max-width: 100%" />
+	<img src="/assets/images/Application Initialization 3.png" style="max-width: 100%" />
 </p>
 
 And here's an example of how a working website level configuration could look like.
