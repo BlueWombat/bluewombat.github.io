@@ -27,7 +27,7 @@ Now all there's really left to say is; "Winamp, Winamp, it really whips the Llam
 
 ### UPDATE: 16-05-2015
 
-Since Spotiamp's official website has been down for quite some time, I've decided to put up a mirror for it here: <a href="/assets/downloads/Spotiamp_0.2_Setup.exe">Mirror</a>.
+Since Spotiamp's official website has been down for quite some time, I've decided to put up a mirror for it here: <a href="/assets/downloads/Spotiamp_0.2_Setup.zip">Mirror</a>.
 
 ### UPDATE: 15-03-2017
 

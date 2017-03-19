@@ -66,6 +66,6 @@ And here's an example of how a working website level configuration could look li
 
 You can verify everything works as intended by manually killing your worker process (w3wp.exe) and see it how it will immediately spool back up, that's all there is to it. Happy configuring.
 
-Here's the link for downloading the installer for Application Initialization for IIS 7.5 over at <a href="http://www.iis.net/downloads/microsoft/application-initialization" target="_blank">Microsoft</a>, and I've provided a mirror for the installer here: <a href="/assets/downloads/ApplicationInitialization.exe">Mirror</a>.
+Here's the link for downloading the installer for Application Initialization for IIS 7.5 over at <a href="http://www.iis.net/downloads/microsoft/application-initialization" target="_blank">Microsoft</a>, and I've provided a mirror for the installer here: <a href="/assets/downloads/ApplicationInitialization.zip">Mirror</a>.
 
 Here's the link for downloading the installer for the custom configuration snap-in over at <a href="http://blogs.msdn.com/b/amol/archive/2013/01/25/application-initialization-ui-for-iis-7-5.aspx" target="_blank">MSDN Blogs</a>, and a mirror is provided here: <a href="/assets/downloads/ApplicationInitializationInstaller_x64.zip">Mirror</a>.
