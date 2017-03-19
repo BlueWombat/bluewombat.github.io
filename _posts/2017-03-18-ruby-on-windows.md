@@ -13,7 +13,7 @@ Here's a small cheat sheet for installing both the Ruby runtime, and the Ruby co
 
 ### Installing Ruby
 
-First go to <a href="https://rubyinstaller.org/downloads/">RubyInstaller.org</a> and download the package `Ruby 2.3.3 (x64)` and install it.
+First go to <a href="https://rubyinstaller.org/downloads/" target="_blank">RubyInstaller.org</a> and download the package `Ruby 2.3.3 (x64)` and install it.
 I recommend installing in the root of your OS drive, so `C:\Ruby23-x64`, check the box `Add Ruby executables to your PATH`, this option should make life easier later on, for instance if you want to build from CMD, or from Git BASH as I do.
 
 Second, download the package `DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe`, and unpack it to `C:\RubyDev`.
@@ -60,6 +60,6 @@ Open the file `C:\RubyDev\config.yml` in a text editor, and make the content lik
 {% endraw %}
 {% endhighlight %}
 
-Finally, run the command `ruby dk.rb install`. If you get a warning about skipping, because you have a previous or misconfigured installtion, run the command "ruby dk.rb install --force" instead.
+Finally, run the command `ruby dk.rb install`. If you get a warning about skipping, because you have a previous or misconfigured installtion, run the command `ruby dk.rb install --force` instead.
 
 Now you're done, and should be ready for installing and developing (with) Ruby gems :-)
