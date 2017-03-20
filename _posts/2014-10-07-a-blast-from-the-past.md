@@ -13,7 +13,7 @@ It was actually quite an emotional thing, and yes i know it's weird, but it was!
 <!--more-->
 
 But in the middle of the pile of 3M's and Sony's, I stumbled upon something I had long since forgotten. A very special disk that I instantly remembered how I got, a translucent blue disk that I once got with an action figure, when shopping with mom and grandma. Must've been no older than 4-5 years old.
-Little did I realise back then, that the toy and disk was actually a movie memorabilia from an action movie I wouldn't see until years later, Independence Day, one of my favorite sci-fi's!
+Little did I realise back then, that the toy and disk was actually a movie memorabilia from an action movie I wouldn't see until years later, <a href="https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=independence+day" target="_blank">Independence Day</a> (<a href="http://www.imdb.com/title/tt0116629/" target="_blank">IMDB</a>), one of my favorite sci-fi's!
 It's a so called ID4 Mission Disk, and this one is number 6, containing a weird little game where you need to program a satellite through a laptop, to be able to talk to extraterrestrials.
 
 Now all I need is to find the actual toy, I hope I still have it somewhere, and regarding the disk, this is one disk I won't dispose of.
