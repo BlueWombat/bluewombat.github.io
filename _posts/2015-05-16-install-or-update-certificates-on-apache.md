@@ -36,7 +36,7 @@ openssl req -new -key ~/keyfile.key -out ~/request.csr
 
 ### Order your certificate online
 
-Whether your favorite supplier is RapidSSL, DigiCert or whatever, the process is largely the same. You choose the certificate type, and pass the content of the request.csr file, in order to receive your certificate.
+Whether your favorite supplier is <a href="https://www.rapidssl.com/buy-ssl/" target="_blank">RapidSSL</a>, <a href="https://www.digicert.com/ssl-certificate.htm" target="_blank">DigiCert</a>, <a href="https://www.symantec.com/ssl-certificates/" target="_blank">Symantec (formerly VeriSign)</a>, <a href="https://www.cloudflare.com/ssl/dedicated-certificates/" target="_blank">Cloudflare</a> or whatever, the process is largely the same. You choose the certificate type, and pass the content of the request.csr file, in order to receive your certificate.
 
 ### Install your certificate
 
@@ -91,4 +91,4 @@ openssl rsa -in ~/keyfile.key -out ~/keyfile_nopwd.key
 Now you need to copy over the new private key to the destination noted in your config. Once done, try issuing another httpd restart.
 This time around is should just restart, without prompting for passphrase, and you're golden.
 
-Now grab a Miller, and kick back :-)
+Now grab a <a href="https://www.millercoors.com/" target="_blank">Miller</a>, and kick back :-)
