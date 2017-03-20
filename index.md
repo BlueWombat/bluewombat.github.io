@@ -15,6 +15,7 @@ I hope you'll enjoy it as much as I enjoy writing it; have fun :-)
 	<li>
 		<a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 		{{ post.content | split:"<!--more-->" | first }}
+		<!--<a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread"></a>-->
 	</li>
   {% endfor %}
 </ul>
