@@ -1,0 +1,27 @@
+---
+layout: page
+title: Domain Portfolio
+header: Domain Portfolio
+group: navigation
+---
+{% include JB/setup %}
+
+<table>
+	<thead>
+		<th>Domain</th>
+		<th>For sale</th>
+	</thead>
+	<tbody>
+{% for domain in site.data.Domains %}
+		<tr>
+			<td>{{domain.Domain}}</td>
+			{% if domain.ForSale == 'true' %}
+			<td><a target="_blank" href="https://www.afternic.com/domain/{{domain.Domain}}">Afternic</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a target="_blank" href="https://sedo.com/search/details/?domain={{domain.Domain}}">Sedo</a></td>
+			{% else %}
+			<td>NO</td>
+			{% endif %}
+		</tr>
+{% endfor %}
+	</tbody>
+</table>
+
