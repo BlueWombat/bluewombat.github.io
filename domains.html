@@ -9,18 +9,20 @@ group: navigation
 <table>
 	<thead>
 		<th>Domain</th>
+		<th>Category</th>
 		<th>For sale</th>
 	</thead>
 	<tbody>
 {% for domain in site.data.Domains %}
 		<tr>
 			<td><a target="_blank" rel="noreferrer" href="http://{{domain.Domain}}">{{domain.Domain}}</a></td>
-			{% if domain.ForSale == 'true' %}
+			<td>{{domain.Category}}</td>
+			{% if domain.ForSale == 'TRUE' %}
 				{% assign fsLinks = '' %}
-				{% if domain.Afternic == 'true' %}
+				{% if domain.Afternic == 'TRUE' %}
 					{% assign fsLinks = fsLinks | append: '<a target="_blank" href="https://www.afternic.com/domain/' | append: domain.Domain | append: '">Afternic</a>|' %}
 				{% endif %}
-				{% if domain.Sedo == 'true' %}
+				{% if domain.Sedo == 'TRUE' %}
 					{% assign fsLinks = fsLinks | append: '<a target="_blank" href="https://sedo.com/search/details/?domain=' | append: domain.Domain | append: '">Sedo</a>|' %}
 				{% endif %}
 				{% assign fsLinks = fsLinks | split: '|' | join: '&nbsp;&nbsp;-&nbsp;&nbsp;' %}
