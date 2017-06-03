@@ -23,7 +23,7 @@ group: navigation
 					{% assign fsLinks = fsLinks | append: '<a target="_blank" href="https://www.afternic.com/domain/' | append: domain.Domain | append: '">Afternic</a>|' %}
 				{% endif %}
 				{% if domain.Sedo == 'TRUE' %}
-					{% assign fsLinks = fsLinks | append: '<a target="_blank" href="https://sedo.com/search/details/?domain=' | append: domain.Domain | append: '">Sedo</a>|' %}
+					{% assign fsLinks = fsLinks | append: '<a target="_blank" href="https://sedo.com/search/details/?partnerid=321527&domain=' | append: domain.Domain | append: '">Sedo</a>|' %}
 				{% endif %}
 				{% assign fsLinks = fsLinks | split: '|' | join: '&nbsp;&nbsp;-&nbsp;&nbsp;' %}
 				<td>{{fsLinks}}</td>
@@ -34,4 +34,18 @@ group: navigation
 {% endfor %}
 	</tbody>
 </table>
+<script type="text/javascript">
+	var _sedoq = _sedoq || {};
+	_sedoq.partnerid = '321527';
+	_sedoq.locale = 'en-us';
 
+	(function () {
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = '//sedo.com/resources/js/plugins/widget.search.get.js';
+		var f = document.getElementsByTagName('script')[0];
+		f.parentNode.insertBefore(s, f);
+	})();
+</script>
+<div id="sedo-widget-search"></div>
