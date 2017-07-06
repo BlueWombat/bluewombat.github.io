@@ -10,7 +10,7 @@ group: navigation
 	<thead>
 		<th>Domain</th>
 		<th>Category</th>
-		<th>For sale</th>
+		<th style="width:30%;text-align:center">For sale</th>
 	</thead>
 	<tbody>
 {% for domain in site.data.Domains %}
@@ -26,14 +26,50 @@ group: navigation
 					{% assign fsLinks = fsLinks | append: '<a target="_blank" href="https://sedo.com/search/details/?partnerid=321527&domain=' | append: domain.Domain | append: '">Sedo</a>|' %}
 				{% endif %}
 				{% assign fsLinks = fsLinks | split: '|' | join: '&nbsp;&nbsp;-&nbsp;&nbsp;' %}
-				<td>{{fsLinks}}</td>
+				<td style="text-align:center">{{fsLinks}}</td>
 			{% else %}
-			<td>NO</td>
+			<td style="text-align:center">NO</td>
 			{% endif %}
 		</tr>
 {% endfor %}
 	</tbody>
 </table>
+<table id="topDomains" style="display:none">
+	<thead>
+		<th>Domain</th>
+		<th style="width:30%;text-align:center">Price</th>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+<script type="text/html" id="topDomainsTmpl">
+	<tr>
+		<td><a data-href="link" data-content="domain" target="_blank"></a></td>
+		<td style="text-align:center"><a data-href="link" data-content="price" target="_blank">Sedo</a></td>
+	</tr>
+</script>
+<script type="text/javascript">
+	$(function() {
+		$.getJSON("https://query.yahooapis.com/v1/public/yql?callback=?", {
+			q: "select * from csv where url='https://sedo.com/txt/topdomains_us.txt'",
+			format: "json"
+		},
+		function (data) {
+			var rows = data.query.results.row, newRows = [];
+			for (var i = 0; i < rows.length; i++) {
+				var cols = rows[i].col0.split('~'), domain = cols[0], price = cols[1];
+				var row = {
+					domain: domain,
+					link: "https://sedo.com/search/details/?partnerid=321527&domain=" + domain,
+					price: price
+				};
+				newRows.push(row);
+			}
+			console.log($("#topDomains tbody"));
+			$("#topDomains tbody").loadTemplate($("#topDomainsTmpl"), newRows).parent().slideDown("fast");
+		});
+	});
+</script>
 <script type="text/javascript">
 	var _sedoq = _sedoq || {};
 	_sedoq.partnerid = '321527';
