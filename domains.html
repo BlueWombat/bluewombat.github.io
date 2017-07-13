@@ -50,24 +50,27 @@ group: navigation
 </script>
 <script type="text/javascript">
 	$(function() {
-		$.getJSON("https://query.yahooapis.com/v1/public/yql?callback=?", {
-			q: "select * from csv where url='https://sedo.com/txt/topdomains_us.txt'",
-			format: "json"
-		},
-		function (data) {
-			var rows = data.query.results.row, newRows = [];
-			for (var i = 0; i < rows.length; i++) {
-				var cols = rows[i].col0.split('~'), domain = cols[0], price = cols[1];
-				var row = {
-					domain: domain,
-					link: "https://sedo.com/search/details/?partnerid=321527&domain=" + domain,
-					price: price
-				};
-				newRows.push(row);
-			}
-			console.log($("#topDomains tbody"));
-			$("#topDomains tbody").loadTemplate($("#topDomainsTmpl"), newRows).parent().slideDown("fast");
-		});
+		function populate(feedUrl, tableId) {
+			$.getJSON("https://query.yahooapis.com/v1/public/yql?callback=?", {
+				q: "select * from csv where url='" + feedUrl + "'",
+				format: "json"
+			},
+			function (data) {
+				var rows = data.query.results.row, newRows = [];
+				for (var i = 0; i < rows.length; i++) {
+					var cols = rows[i].col0.split('~'), domain = cols[0], price = cols[1];
+					var row = {
+						domain: domain,
+						link: "https://sedo.com/search/details/?partnerid=321527&domain=" + domain,
+						price: price
+					};
+					newRows.push(row);
+				}
+				$("#" + tableId + " tbody").loadTemplate($("#topDomainsTmpl"), newRows).parent().slideDown("fast");
+			});
+		}
+		populate("https://sedo.com/txt/topdomains_us.txt", "topDomains");
+		//populate("https://sedo.com/txt/auctions_us.txt", "auctionDomains");
 	});
 </script>
 <script type="text/javascript">
