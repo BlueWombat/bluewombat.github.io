@@ -14,7 +14,7 @@ I hope you'll enjoy it as much as I enjoy writing it; have fun :-)
   {% for post in site.posts %}
 	<li>
 		<a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
-		<a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">0 Comments</a>
+		<a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.title }}">0 Comments</a>
 		{{ post.content | split:"<!--more-->" | first }}
 	</li>
   {% endfor %}
