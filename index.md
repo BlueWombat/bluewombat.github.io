@@ -19,7 +19,13 @@ I hope you'll enjoy it as much as I enjoy writing it; have fun :-)
 	</li>
 	{% if forloop.index0 == 2 %}
 	<li style="text-align: center;padding-bottom: 10px">
-		<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=13&l=ez&f=ifr&linkID=268f3689c587481e9885f20589073720&t=bluewombat-20&tracking_id=bluewombat-20" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+		    google_ad_client: "ca-pub-8311298276239162",
+		    enable_page_level_ads: true
+		  });
+		</script>
 	</li>
 	{% endif %}
   {% endfor %}
